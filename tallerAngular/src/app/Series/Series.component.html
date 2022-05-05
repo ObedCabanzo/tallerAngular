@@ -1,0 +1,35 @@
+<div class="container-fluid title">
+  <div class="row title">
+    <div class = "col-2 icon"><i class="fa-solid fa-tv" hi></i></div>
+    <div class = "col-10 subtitle" > <h2 >TV Series</h2></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class = "col-10">
+      <table class="table table-striped ">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Channel</th>
+              <th scope="col">Seasons</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr *ngFor = "let serie of series">
+              <td>{{serie.getId}}</td>
+              <td>{{serie.getName}}</td>
+              <td>{{serie.getChannel}}</td>
+              <td>{{serie.getSeasons}}</td>
+            </tr>
+
+
+
+          </tbody>
+        </table>
+
+  </div>
+  <p >seasons average {{getAvg}}</p>
+</div>
